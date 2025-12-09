@@ -2,8 +2,8 @@ package com.qspider.task;
 
 public class RecursionTask {
     public static void main(String[] args){
-        /*System.out.println(recursionFactorial(5));*/
-        /*System.out.println(recursionFibonacci(10));*/
+        System.out.println(recursionFactorial(5));
+        System.out.println(recursionFibonacci(10));
         printFactors(10,1);
     }
 
