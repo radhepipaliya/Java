@@ -100,7 +100,6 @@ public class PerfectNumber {
     }
 
     public static boolean isArmstrong(int n){
-            int temp = n;
             int sum =0;
             int n1=n;
             int count =digits(n);
