@@ -1,4 +1,4 @@
-package com.qspider;
+package com.qspider.Pattern;
 
 public class StarPattern {
    public void draw(int n){

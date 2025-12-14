@@ -1,4 +1,4 @@
-package com.qspider;
+package com.qspider.task;
 
 import java.util.Scanner;
 
@@ -178,7 +178,7 @@ public class Test {
 
         while(n>0){
             int rem=n%10;
-            sum+=power(n,count);
+            sum+=power(rem,count);
             n/=10;
         }
         return temp==sum;
@@ -199,5 +199,9 @@ public class Test {
         }
         return ans;
     }
+
+
+
+
 
 }

@@ -1,4 +1,4 @@
-package com.qspider;
+package com.qspider.Pattern;
 
 public class ParscalTree {
         public static void main(String[] args) {

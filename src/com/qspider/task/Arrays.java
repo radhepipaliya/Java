@@ -2,21 +2,29 @@ package com.qspider.task;
 
 public class Arrays {
     public static void main(String[] args){
-           int[] arr= new int[]{1,2,3,4,5,6};
-          /*  System.out.println(largestElementInArray(arr));
-            System.out.println(smallestElementInArray(arr));
-            System.out.println(sumOfAllElementInArray(arr));
-            System.out.println(avgOfArray(arr));
+           int[] arr= new int[]{1,0,3,0,5};
+        int[] arrs= new int[]{1,2,3,4,5};
+           /* System.out.println("Largest:"+largestElementInArray(arr));
+            System.out.println("Smallest:"+smallestElementInArray(arr));
+            System.out.println("Sum Of all:"+sumOfAllElementInArray(arr));
+            System.out.println("Average of :"+avgOfArray(arr));
             evenAndOddInArray(arr);
             printArray(copyElement(arr));
-            linearSearch(6,arr);*/
-            reverseArray(arr);
+            linearSearch(6,arr);
+            reverseArray(arr);*/
+        /*int[] res=mergeArray(arr,arrs);
+        printArray(res);*/
+
+        rotate(arr,3);
+
+        /*sumof(arr);*/
+        /*mul(arr);*/
     }
   /*  1. Write a Java program to find the largest element in an array.*/
     public static int largestElementInArray(int[] arr){
         int largest = arr[0];
-        for(int i=0; i<arr.length;i++){
-            if(largest>arr[i]){
+        for(int i=1; i<arr.length;i++){
+            if(arr[i]>largest){
                 largest=arr[i];
             }
         }
@@ -27,8 +35,8 @@ public class Arrays {
 
     public static int smallestElementInArray(int[] arr){
         int smallest=arr[0];
-        for(int i=0;i<arr.length;i++){
-            if(smallest<arr[i]){
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]<smallest){
                 smallest=arr[i];
             }
         }
@@ -94,11 +102,9 @@ public class Arrays {
     }
 
     /*Write a Java program to reverse an array.*/
-    public static void reverseArray(int[] arr){
-        int i=0;
-        int j=arr.length-1;
+    public static void reverseArray(int[] arr,int i,int j){
 
-        while(j>i){
+        while(i<j){
             int temp = arr[i];
             arr[i]=arr[j];
             arr[j]=temp;
@@ -108,4 +114,51 @@ public class Arrays {
 
         printArray(arr);
     }
+
+
+
+    /*public static int[] mergeArrayTwo(int arr[],int arrs[]){
+        int[] res = new int[arr.length + arrs.length];
+        int a=0,b=1;
+        for(int i=0;i<res.length;i++){
+
+        }
+    }*/
+
+    public static void rotate(int[] nums, int k) {
+        k=k%nums.length;
+        reverseArray(nums,0,nums.length-1);
+        reverseArray(nums,0,k);
+        reverseArray(nums,k+1,nums.length-1);
+        printArray(nums);
+    }
+
+
+
+//    public static void mul(int[] nums){
+//        int[] res = new int[5];
+//        /*int ans=1;
+//        for(int i=0;i<nums.length;i++){
+//            if(nums[i]!=0) {
+//                ans *= nums[i];
+//            }else{
+//                ans*=1;
+//            }
+//        }
+//        for(int j=0;j<nums.length;j++){
+//            if(nums[j]!=0) {
+//                nums[j] = ans / nums[j];
+//            }else{
+//                nums[j]=ans;
+//            }
+//        }
+//        printArray(nums);
+//    }*/
+//
+//        int pf = 1;
+//        for(int i=0;i<nums.length;i++){
+//        }
+
+
+
 }
