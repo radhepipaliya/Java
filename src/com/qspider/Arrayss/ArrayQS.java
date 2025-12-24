@@ -1,6 +1,7 @@
 package com.qspider.Arrayss;
+
 import java.util.Scanner;
-public class Arr {
+public class ArrayQS {
     public static void main(String[] args){
 //        Scanner sc=new Scanner(System.in);
 //        System.out.println("Enter Size of an array");
@@ -15,7 +16,9 @@ public class Arr {
 
 //        int[] nums=createIntArray();
         int[] nums= new int[]{1,2,3,4,5};
-        mulOfElement(nums);
+//        mulOfElement(nums);
+//        printSubArray(nums);
+        System.out.println(secondLargest(nums));
 
     }
 
@@ -110,5 +113,50 @@ public class Arr {
         printArray(res);
     }
 
+    public static void printSubArray(int[] arr){
+
+        int n= arr.length;
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                for(int k=0;k<=j;k++){
+                    System.out.print(arr[k]+" ");
+                }
+                System.out.println(" ");
+            }
+        }
+    }
+
+    public static int printSumooofK(int[] arr,int k){
+        int max=0;
+        for(int i=0;i<=arr.length;i++){
+            max+=arr[i];
+        }
+        for(int i=1;i<=arr.length;i++){
+            int sum = max-arr[i-1]+arr[i+k-1];
+            if(sum>max){
+                max=sum;
+            }
+        }
+
+        return max;
+    }
+
+    public  static int secondLargest(int[] nums) {
+        int max=0;
+        for(int i=0;i<nums.length;i++){
+            if(max<nums[i]){
+                max = nums[i];
+            }
+        }
+
+        int secondMax =nums[0];
+        for(int i=0;i<nums.length;i++){
+            if(secondMax<nums[i] && max>nums[i]){
+                secondMax = nums[i];
+            }
+        }
+
+        return secondMax;
+    }
 
 }
