@@ -1,0 +1,22 @@
+J2EE
+
+->Its stands for Java to Enterprise Edition.
+->its a standard, robust_platform for developing multi-tier, server side, enterprise Application.
+->Now onwards, it is renamed to JakartaEE.
+
+
+JAR file
+
+->It stands for Java Archived.
+->It is used to stored the java resources like .class file,source file and configuration file.
+
+Project Build Tools.
+
+->A project build tool is a program that automates the process of creating executable applications from source code by handling tasks such as compiling, running tests, managing dependencies, and packaging the code. This automation ensures consistency, reduces human error, and improves developer productivity.
+Key Functions of a Build Tool
+
+->Dependency Management: Automatically downloads and manages external libraries and frameworks that the project needs (e.g., fetching a .jar file or a Node module).
+->Compilation: Transforms human-readable source code (like Java, C++, or TypeScript) into machine-readable code or bytecode.
+->Testing: Automatically runs unit and integration tests to ensure code quality.
+->Packaging: Bundles the compiled code and associated resources into a distributable format (e.g., .jar, .war, .exe, or Docker Image).
+->Automation & Efficiency: Orchestrates tasks in the correct order using a dependency graph, often running independent tasks in parallel and using caching to save time.

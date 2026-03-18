@@ -1,0 +1,5 @@
+Collection API
+-> we can use a set of interface and classes for working with various data structures and algorithm. Such as lists, maps, set and queues.
+
+Collection
+-> it is Interfaces.
